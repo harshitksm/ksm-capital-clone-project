@@ -29,10 +29,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-card">
+    <section id="services" className="py-32 bg-gradient-card">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+        <div className="text-center mb-20">
+          <h2 className="font-serif text-5xl md:text-6xl font-normal text-foreground mb-8 leading-tight">
             Distinct Solutions, Personal Service
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">

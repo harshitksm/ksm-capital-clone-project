@@ -19,12 +19,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-xl">K</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+              <span className="text-primary-foreground font-serif font-bold text-2xl">K</span>
             </div>
             <div>
-              <h1 className="font-serif text-2xl font-bold text-primary">KSM Capital</h1>
+              <h1 className="font-serif text-2xl font-medium text-foreground">KSM Capital</h1>
             </div>
           </div>
 
@@ -34,7 +34,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium text-sm tracking-wide"
               >
                 {item.name}
               </a>
@@ -43,7 +43,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="default" className="bg-ksm-teal hover:bg-ksm-teal-light text-primary-foreground">
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               Request Introduction
             </Button>
           </div>

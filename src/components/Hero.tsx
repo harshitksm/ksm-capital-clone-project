@@ -9,22 +9,22 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-ksm-teal/90 via-ksm-teal/70 to-ksm-teal/40"></div>
+        <div className="absolute inset-0 bg-background/95"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-tight mb-8">
-            For more than seven generations, we have grown and evolved alongside 
-            <span className="block text-ksm-gold-muted">extraordinary possibilities.</span>
+        <div className="max-w-6xl mx-auto">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-normal text-foreground leading-[0.9] mb-12 tracking-tight">
+            For more than seven generations, we have grown and evolved alongside members of the KSM family, pursuing{" "}
+            <span className="block text-primary font-medium mt-4">extraordinary possibilities.</span>
           </h1>
           
-          <div className="mt-12">
+          <div className="mt-16">
             <Button 
               variant="outline" 
               size="lg"
-              className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4"
+              className="bg-transparent border-2 border-foreground text-foreground hover:bg-foreground hover:text-background text-base px-8 py-4 font-medium tracking-wide"
             >
               Who We Are
             </Button>
@@ -34,8 +34,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary-foreground rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary-foreground rounded-full mt-2"></div>
+        <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-foreground rounded-full mt-2"></div>
         </div>
       </div>
     </section>

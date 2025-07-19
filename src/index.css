@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
 :root {
-    --background: 187 24% 95%;
-    --foreground: 195 100% 6%;
+    --background: 195 100% 4%;
+    --foreground: 45 100% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 195 100% 6%;
+    --card: 195 80% 6%;
+    --card-foreground: 45 100% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 195 100% 6%;
+    --popover: 195 80% 6%;
+    --popover-foreground: 45 100% 85%;
 
-    --primary: 195 100% 6%;
-    --primary-foreground: 187 24% 95%;
+    --primary: 45 100% 70%;
+    --primary-foreground: 195 100% 4%;
 
-    --secondary: 180 20% 90%;
-    --secondary-foreground: 195 100% 6%;
+    --secondary: 195 60% 8%;
+    --secondary-foreground: 45 100% 85%;
 
-    --muted: 180 20% 88%;
-    --muted-foreground: 195 50% 35%;
+    --muted: 195 40% 12%;
+    --muted-foreground: 45 30% 65%;
 
-    --accent: 195 100% 8%;
-    --accent-foreground: 187 24% 95%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 195 100% 4%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 100% 85%;
 
-    --border: 180 15% 85%;
-    --input: 180 15% 85%;
-    --ring: 195 100% 6%;
+    --border: 195 30% 15%;
+    --input: 195 30% 15%;
+    --ring: 45 100% 70%;
     
-    /* KSM Capital Brand Colors */
-    --ksm-teal: 195 100% 6%;
-    --ksm-teal-light: 195 50% 15%;
-    --ksm-teal-lighter: 195 30% 25%;
-    --ksm-gold: 45 100% 50%;
-    --ksm-gold-muted: 45 85% 60%;
-    --ksm-cream: 45 40% 96%;
+    /* KSM Capital Brand Colors - Dark Theme */
+    --ksm-teal: 195 100% 4%;
+    --ksm-teal-light: 195 80% 8%;
+    --ksm-teal-lighter: 195 60% 12%;
+    --ksm-gold: 45 100% 70%;
+    --ksm-gold-muted: 45 80% 60%;
+    --ksm-cream: 45 20% 20%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--ksm-teal)), hsl(var(--ksm-teal-lighter)));
-    --gradient-card: linear-gradient(180deg, hsl(var(--background)), hsl(var(--ksm-cream)));
+    --gradient-hero: linear-gradient(135deg, hsl(195 100% 4%), hsl(195 80% 6%));
+    --gradient-card: linear-gradient(180deg, hsl(195 80% 6%), hsl(195 60% 8%));
     
     /* Shadows */
-    --shadow-elegant: 0 20px 40px -10px hsl(var(--ksm-teal) / 0.15);
-    --shadow-card: 0 4px 20px -4px hsl(var(--ksm-teal) / 0.1);
+    --shadow-elegant: 0 20px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
 
     --radius: 0.5rem;
 
@@ -72,49 +72,49 @@ All colors MUST be HSL.
   }
 
 .dark {
-    --background: 195 100% 4%;
-    --foreground: 187 24% 95%;
+    --background: 45 40% 96%;
+    --foreground: 195 100% 4%;
 
-    --card: 195 100% 6%;
-    --card-foreground: 187 24% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 195 100% 4%;
 
-    --popover: 195 100% 6%;
-    --popover-foreground: 187 24% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 195 100% 4%;
 
-    --primary: 187 24% 95%;
-    --primary-foreground: 195 100% 6%;
+    --primary: 195 100% 4%;
+    --primary-foreground: 45 100% 85%;
 
-    --secondary: 195 80% 12%;
-    --secondary-foreground: 187 24% 95%;
+    --secondary: 45 20% 90%;
+    --secondary-foreground: 195 100% 4%;
 
-    --muted: 195 60% 15%;
-    --muted-foreground: 195 30% 65%;
+    --muted: 45 10% 85%;
+    --muted-foreground: 195 30% 35%;
 
-    --accent: 195 80% 12%;
-    --accent-foreground: 187 24% 95%;
+    --accent: 195 100% 4%;
+    --accent-foreground: 45 100% 85%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 100% 85%;
 
-    --border: 195 60% 15%;
-    --input: 195 60% 15%;
-    --ring: 187 24% 75%;
+    --border: 45 15% 80%;
+    --input: 45 15% 80%;
+    --ring: 195 100% 4%;
     
-    /* Dark mode brand colors */
-    --ksm-teal: 195 100% 20%;
-    --ksm-teal-light: 195 80% 25%;
-    --ksm-teal-lighter: 195 60% 30%;
-    --ksm-gold: 45 100% 60%;
-    --ksm-gold-muted: 45 80% 70%;
-    --ksm-cream: 45 20% 10%;
+    /* Light mode brand colors */
+    --ksm-teal: 195 100% 4%;
+    --ksm-teal-light: 195 80% 8%;
+    --ksm-teal-lighter: 195 60% 12%;
+    --ksm-gold: 45 100% 50%;
+    --ksm-gold-muted: 45 80% 40%;
+    --ksm-cream: 45 40% 96%;
     
-    /* Dark gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--ksm-teal-light)));
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--ksm-cream)));
+    /* Light gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(195 100% 4%), hsl(195 80% 8%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(45 40% 96%));
     
-    /* Dark shadows */
-    --shadow-elegant: 0 20px 40px -10px hsl(0 0% 0% / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.2);
+    /* Light shadows */
+    --shadow-elegant: 0 20px 40px -10px hsl(195 100% 4% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(195 100% 4% / 0.1);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

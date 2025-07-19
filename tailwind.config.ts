@@ -53,12 +53,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				ksm: {
-					teal: 'hsl(var(--ksm-teal))',
-					'teal-light': 'hsl(var(--ksm-teal-light))',
-					'teal-lighter': 'hsl(var(--ksm-teal-lighter))',
-					gold: 'hsl(var(--ksm-gold))',
-					'gold-muted': 'hsl(var(--ksm-gold-muted))',
-					cream: 'hsl(var(--ksm-cream))'
+					teal: 'hsl(195 100% 4%)',
+					'teal-light': 'hsl(195 80% 8%)',
+					'teal-lighter': 'hsl(195 60% 12%)',
+					gold: 'hsl(45 100% 70%)',
+					'gold-muted': 'hsl(45 80% 60%)',
+					cream: 'hsl(45 20% 20%)'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -77,12 +77,12 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-hero': 'linear-gradient(135deg, hsl(195 100% 4%), hsl(195 80% 6%))',
+				'gradient-card': 'linear-gradient(180deg, hsl(195 80% 6%), hsl(195 60% 8%))'
 			},
 			boxShadow: {
-				'elegant': 'var(--shadow-elegant)',
-				'card': 'var(--shadow-card)'
+				'elegant': '0 20px 40px -10px hsl(0 0% 0% / 0.5)',
+				'card': '0 4px 20px -4px hsl(0 0% 0% / 0.3)'
 			},
 			fontFamily: {
 				'serif': ['Playfair Display', 'serif'],
