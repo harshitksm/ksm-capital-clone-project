@@ -40,6 +40,9 @@ const News = () => {
     }
   ];
 
+  // Duplicate the array to create seamless loop
+  const duplicatedItems = [...newsItems, ...newsItems];
+
   return (
     <section id="news" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -53,22 +56,15 @@ const News = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {newsItems.map((item, index) => (
-            <NewsCard key={index} {...item} />
-          ))}
-        </div>
-
-        {/* Pagination dots */}
-        <div className="flex justify-center space-x-2">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((page) => (
-            <div 
-              key={page}
-              className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-200 ${
-                page === 1 ? 'bg-primary' : 'bg-muted hover:bg-muted-foreground'
-              }`}
-            />
-          ))}
+        {/* Continuous scrolling container */}
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll-left space-x-6">
+            {duplicatedItems.map((item, index) => (
+              <div key={index} className="flex-shrink-0 w-80">
+                <NewsCard {...item} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
